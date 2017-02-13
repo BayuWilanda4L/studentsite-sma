@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section#services {
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	padding: 70px;
+	background-image: url(../img/subway.jpg); /*kami meminjam background image dari google, gambar mungkin memiliki hak cipta*/
+	background-position: center;
+	background-repeat: no-repeat;
+}
+footer.mainFooter {
+	width: 100%;
+	height: 100px;
+	background-color: #272727;
+	border-top: 1px transparent;
+	margin-top: 30px;
+}
+footer.mainFooter p{
+	color: white;
+	text-align: center;
+}
+.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+
+/*Untuk Article*/
+.article {
+	padding-top: 70px;
+}
+.article2 {
+	border: 1px #ebebeb solid;
+	border-radius: 5px;
+	height: auto;
+	min-height: 600px;
+	padding: 30px;
+}
+/*div.data {
+	width: 50%;
+	height: auto%;
+	background-color: transparent;
+	margin: 20px auto;
+	padding: 20px 0;
+}*/
+div.data .lowong {
+	margin: 15px 0;
+}
+div.data .lowong-isi {
+	margin: 15px 0;
+	height: 200px;
+}
+/*div.data button.kirim {
+	padding: 10px 20px;
+	background-color: #FFD700;
+	margin: -10 auto;
+	border-radius : 5px;
+	color: white;
+	border-style: none;
+	float: right;
+}*/

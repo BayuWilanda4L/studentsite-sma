@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*background: #ebebeb;*/
+	background-image: url(../img/green.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+
+}
+.login {
+	margin: 10.5% auto;
+	width:400px;
+	height:400px;
+	background: rgba(0,0,0,0.6);
+	border-radius: 8px;
+	border: solid 1px transparent;
+}
+.login-centered {
+	float: none;
+	margin: 0 auto;
+}
+/*button.login-centered {
+
+	opacity: 2;
+}*/
+.sealinked-logo {
+	width: 150px;
+	height: 150px;
+	background: white;
+	margin: 30px auto;
+	border-radius: 50%;
+}
+.sealinked-logo > p{
+	text-align: center;
+	margin: 30px auto;
+	line-height: 150px;
+}
+.reg {
+	margin-left: 40px;
+}
+.reg > a {
+	color: white;
+}
+.lost {
+	 margin-right: 20px;
+}
+.lost > a {
+	color: white;
+}
+.form {
+	background: transparent;
+	border: none;
+	border-radius: none;
+	border-bottom: solid 3px white;
+	color: #fff
+}
+.glyph {
+	/*background: transparent;
+	*/
+}
