@@ -8,10 +8,6 @@
 		$isi = htmlentities($_POST['isi']);
 		$tgl=date("Y-m-d h:i:s");
 
-		// $jml_user = $db_conn->prepare("SELECT * FROM keluhan");
-		// $jml_user->execute();
-		// $total = $jml_user->rowCount();
-		// $total++;
 
 		$query = $db_conn->prepare("INSERT INTO studentsite.keluhan(nama,nis,email,isi_keluhan,waktu) VALUES (:nama,:nis,:email,:isi,CURRENT_TIMESTAMP)");
 		$query->bindParam(":id", $total);
