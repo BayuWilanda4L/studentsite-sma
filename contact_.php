@@ -7,24 +7,15 @@
 		$email = htmlentities($_POST['email']);
 		$isi = htmlentities($_POST['isi']);
 		$tgl=date("Y-m-d h:i:s");
-
-
-		$query = $db_conn->prepare("INSERT INTO studentsite.keluhan(nama,nis,email,isi_keluhan,waktu) VALUES (:nama,:nis,:email,:isi,CURRENT_TIMESTAMP)");
-		$query->bindParam(":id", $total);
-		$query->bindParam(":nama", $nama);
-		$query->bindParam(":nis", $nis);
-		$query->bindParam(":email", $email);
-		$query->bindParam(":isi", $isi);
-		$query->bindParam(":tanggal", $tgl);
-		$query->execute();
-		if ($query) {
-			header("location:/studentsite-sma/");
+		if ($user->kirimkeluhan($nama,$nis,$email,$isi,$tgl)) {
+			echo "<script>alert('Keluhan/saran anda telah kami terima.'); window.location='/studentsite-sma' </script>";
+		} else {
+			echo "<script>alert('Error nih guys.'); window.location='/studentsite-sma/about/' </script>";
 		}
 		
 	}
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +45,7 @@
 			<hr>
 			<div class="col-md-8 centered">
 					<div class="col-md-12 col-sm-12">
-					<form method='post'>
+					<form  method='POST'>
 						<div class='data'>
 							<input class='form-control lowong' name='nama' type='text' placeholder='NAMA*' required>
 							<input class='form-control lowong' name='nis' type='text' placeholder='NIS*' required>

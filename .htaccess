@@ -2,6 +2,7 @@ RewriteEngine On
 
 RewriteRule ^event?$ 404.php
 RewriteRule ^event/?$ 404.php
+RewriteRule ^event/([+a-zA-Z0-9]+)?$ 404.php
 RewriteRule ^event/([+a-zA-Z0-9]+)/?$ pengumuman_.php?judul=$1
 
 RewriteRule ^about?$ 404.php
@@ -11,3 +12,9 @@ RewriteRule ^about/?$ about_.php
 
 RewriteRule ^contact?$ 404.php
 RewriteRule ^contact/?$ contact_.php
+
+RewriteRule ^signin?$ 404.php
+RewriteRule ^signin.php?$ 404.php
+RewriteRule ^signin/?$ signin_.php
+
+RewriteRule ^/([+a-zA-Z0-9]+)?$ contact_.php

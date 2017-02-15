@@ -27,6 +27,12 @@ footer.mainFooter p{
 	float: none;
 	margin: 0 auto;
 }
+.big-text {
+	font-size: 150px;
+}
+.error {
+	margin-bottom: 100px
+}
 
 
 /*Untuk Article*/
